@@ -1,0 +1,72 @@
+	
+/*LOGIN*/
+
+.logo{
+	width:310px;
+	height:69px;
+	margin: 0 auto;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.gravar{
+	margin: 0 auto;
+	width:400px;
+	height:250px;
+	font-family:arial;
+	font-size:14px;
+	margin: 0 auto;
+	margin-left:350px;
+	margin-top:130px;
+	
+}
+
+.inputgravar{
+	position:relative;
+	width:400px;
+	height:80px;
+	margin-left:75px;
+	font-family:arial;
+	font-size:14px;
+}	
+.submitgravar{
+	margin: 0 auto;
+	width:120px;
+	height:30px;
+	margin-top:10px;
+}
+input[type=text]{
+	width:225px;
+	height:22px;
+	font-family:arial;
+	font-size:12px;
+	background-color:#FFFFFF;
+	color:#000000;
+	border: 1px solid #01265D;
+}
+input[type=password]{
+	width:225px;
+	height:22px;
+	font-family:arial;
+	font-size:12px;
+	background-color:#FFFFFF;
+	color:#000000;
+	border: 1px solid #01265D;
+}
+
+button{
+	width:120px;
+	height:30px;
+	cursor:pointer;
+	font-family:arial;
+	font-size:14px;
+	background-color:#00ADEE;
+	color:#FFFFFF;
+	border: 1px solid #01265D;
+}
+input[type=submit]:hover{
+	background-color:#FFFFFF;
+	color:#000000;
+	border: 1px solid #00ADEE;
+}
+
+		
