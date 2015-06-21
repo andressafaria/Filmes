@@ -11,6 +11,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Filmes</title>
+<script type="text/javascript" language="javascript">
+<!--
+	function validaFrm(frm) {
+		if(frm.nome.value==''){
+			alert('Preencha o nome.');
+			frm.nome.focus();
+			return(false);
+		}
+		if(frm.email.value=='') {
+			alert('Preencha o email.');
+			frm.email.focus();
+			return(false);		
+		}else {
+if (email.indexOf("@") == -1) {
+alert("Digite um e-mail válido.");
+formulario.email.focus(); // coloque esse linha no script fazendo referência ao formulário e ao campo com foco //
+return false;
+}}
+		if(frm.login.value=='') {
+			alert('Preencha o login.');
+			frm.login.focus();
+			return(false);		
+		}
+		return(true);
+		if(frm.senha.value=='') {
+			alert('Preencha a senha.');
+			frm.senha.focus();
+			return(false);		
+		}
+		
+		return(true);
+	}	
+	
+	
+	
+		
+-->
+</script>
 </head>
 
 <body>
@@ -24,22 +62,22 @@
 			 <div class="cover">
  		
 				<table>
-					<form method="post" id="form_user" action="#">
+					<form method="post" id="form_user" action="#" onSubmit="return validaFrm(this);">
    					<tr>
     					<td>Nome:</td>
-						<td><input type="text" name="nome" id="nome" required="required"/></td>
+						<td><input type="text" name="nome" id="nome" /></td>
     				</tr>
 					<tr>
    						 <td>Email:</td>
-						 <td><input type="text" name="email" id="email" required="required"></td>
+						 <td><input type="text" name="email" id="email"  onBlur="ValidaEmail();"></td>
    					</tr>
 					<tr>
    						 <td>Login:</td>
-						 <td><input type="text" name="entrar" id="entrar" required="required"/></td>
+						 <td><input type="text" name="entrar" id="entrar" /></td>
    					</tr>
 					<tr>
    						 <td>Senha:</td>
-						 <td><input type="password" name="senha" id="senha" required="required"/></td>
+						 <td><input type="password" name="senha" id="senha" /></td>
    					</tr>
    					<tr>
     					<td colspan="2" >
