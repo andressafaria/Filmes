@@ -4,17 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Movies.com</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
 <script type="text/javascript" language="javascript">
 <!--
 	function validaFrm(frm) {
 		if(frm.login.value==''){
 			alert('Preencha o login.');
-			frm.frm_nome.focus();
+			frm.login.focus();
 			return(false);
 		}
 		if(frm.senha.value=='') {
 			alert('Preencha a senha.');
-			frm.frm_email.focus();
+			frm.senha.focus();
 			return(false);		
 		}
 		return(true);
