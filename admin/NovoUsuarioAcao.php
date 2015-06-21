@@ -9,17 +9,25 @@ $entrar = $_POST['entrar'];
 $senha=$_POST['senha'];
 	  
 //Verificando se o formuçario está vazio... Se não estiver executa a query para salvar os dados no banco	  
-if(!empty($_POST['metodo'])){
-	  
+
+	if(!$nome || !$email || !$entrar || !$senha){
+		
+		
+		 echo 'Erro ao cadastrar!';
+    exit;
+		
+	}else{
 	  	mysql_query("insert into administracao(nome,email,login,senha) values ('".$nome."','".$email."','".$entrar."','".$senha."')");
 		$html= 'Administrador cadastrado com sucesso!';
 		echo $html;
 		
 		
 		
-	    
+	} 
+	
+	
 // faltando redirecionar para a página anterior... está dando um erro... verificar.    		
 
-}
+
 	
 ?>
