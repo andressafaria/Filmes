@@ -4,7 +4,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Movies.com</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" language="javascript">
+<!--
+	function validaFrm(frm) {
+		if(frm.login.value==''){
+			alert('Preencha o login.');
+			frm.frm_nome.focus();
+			return(false);
+		}
+		if(frm.senha.value=='') {
+			alert('Preencha a senha.');
+			frm.frm_email.focus();
+			return(false);		
+		}
+		return(true);
+	}	
+-->
+</script>
 </head>
+
 
 <body>		
 	<div id="barra"></div>
@@ -15,7 +33,7 @@
 <div class="gravar">
 		<div class="inputgravar">                                                             
 			  <table cellpadding="0" cellspacing="0">
-			    	<form method="post" action="login_vai.php">
+			    	<form method="post" onSubmit="return validaFrm(this);" action="login_vai.php">
 			      		<tr>
 			       			 <td colspan="3"><div align="center"><img src="images/lock.png" /><strong> &Aacute;rea restrita </strong></div></td>
      				   </tr>
