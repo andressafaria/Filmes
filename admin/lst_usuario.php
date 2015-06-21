@@ -78,7 +78,7 @@ echo "<script>alert(' Deletado com sucesso!');location.href='usuarios.php';</scr
 	  
 	  
       						<td width="13%"><a href="lst_alterarUsuario.php?id_adm= <?php echo $coluna["id_adm"];?>">Editar</a></td>
-      						<td width="12%"><a href="deleta_usuario.php?id_adm=<?php echo $coluna["id_adm"] ;?>">Excluir</a></td>
+      						<td width="12%"><a href="deleta_usuario.php?id_adm=<?php echo $coluna["id_adm"] ;?>" onclick="return confirm('Tem certeza que deseja deletar?'); return false;">Excluir</a></td>
     					</tr>
    					   <?php } ?>
   				</table>
