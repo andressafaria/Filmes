@@ -12,6 +12,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Categorias</title>
+
 	</head>
 
 <body>
@@ -45,7 +46,8 @@
 		 				<tr>
    							<td><?php echo $coluna['categoria']; ?></td>
     						<td width="12%"><a href="lst_alterarCategoria.php?id_categoria= <?php echo $coluna["id_categoria"];?>">Editar</a></td>
-    						<td width="15%"><a href="deleta_categoria.php?id_categoria=<?php echo $coluna["id_categoria"] ;?>">Excluir</a></td>
+    						<td width="15%"><a href="deleta_categoria.php?id_categoria=<?php echo $coluna["id_categoria"] ;?>" 
+                            onclick="return confirm('Tem certeza que deseja deletar?'); return false;">Excluir</a></td>
         			   </tr>
   					<?php  } ?>
 				</table>
