@@ -5,7 +5,11 @@
   $nome = $_POST['nome'];
 	  
 //Verifico se a ação for diferente de vazio, ou seja, se clicar em cadastrar insiro no banco	  
-  	if(!empty($_POST['metodo'])){
+  	if(!$nome){
+		
+		echo 'Erro ao cadastrar categoria!';
+		
+	}else{
 	  
    		mysql_query("insert into categorias(categoria) values ('".$nome."')");
     		

@@ -9,7 +9,28 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Filme</title>
-	</head>
+	<script type="text/javascript" language="javascript">
+    <!--
+	function validaFrm(frm) {
+		if(frm.nome.value==''){
+			alert('Preencha o nome da categoria.');
+			frm.nome.focus();
+			return(false);
+		}
+
+  		return(true);
+	}	
+	
+	
+	
+		
+-->
+</script>  
+    
+    
+    </head>
+    
+    
 
 <body>
 <!--inicio div fundo --> 
@@ -22,7 +43,7 @@
 				<div class="cover">
  		
 					<table>
-						<form method="post" action="#" id="form_categoria">
+						<form method="post" action="#" id="form_categoria" onSubmit="return validaFrm(this);">
    							<tr>
     							<td>Nome da cetegoria:</td>
 								<td><input type="text" name="nome" id="nome" /></td>
