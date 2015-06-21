@@ -48,7 +48,8 @@
        					<td><?php  echo $coluna["categoria"]; ?> </td>
 	  					<td><?php  echo $coluna["filme"]; ?> </td>
       					<td width="12%"><a href="lst_alterarFilme.php?id_filme= <?php echo $coluna["id_filme"];?>"> Editar</a></td>
-     					<td width="12%"><a href="?deleta_filme.php?id_filme=<?php echo $coluna["id_filme"] ;?>">Excluir</a></td>
+     					<td width="12%"><a href="?deleta_filme.php?id_filme=<?php echo $coluna["id_filme"] ;?>"
+                         onclick="return confirm('Tem certeza que deseja deletar?'); return false;">Excluir</a></td>
     			   </tr>
     <?php } ?>
    
