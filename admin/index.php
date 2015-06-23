@@ -23,10 +23,17 @@
 		<div id="content">
 <!--inicio da div cover-->
 			<div class="cover">
-			
-				Colocar alguns conteúdo aqui que irão aparecer no corpo da página.<br />
-           		Pensar em inserir algumas imagens que apontem para os links de serviço<br />
-           		Preciso trabalhar nesta página ainda.
+           
+            
+           <div>
+           		<a href="#"><img src="images/relatorio.jpg" width="120px" height="120px"/>  Relatórios</a></img>
+          
+          		 <a href="lst_categoria.php"><img src="images/indice.jpg" width="120px" height="120px"/>  Categorias</a></img>
+           
+          		 <a href="lst_usuario.php"><img src="images/usuario.jpg" width="120px" height="120px"/>  Usuários</a></img>
+           </div>
+            <div><a href="lst_filmes.php"><img src="images/filme.jpg" width="120px" height="120px"/>  Filmes</a></img></div>
+
 <!-- fechando a div cover-->
             </div>
 <!-- fechando a div content-->	
