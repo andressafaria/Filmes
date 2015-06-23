@@ -11,7 +11,7 @@
 	<div id="cabecalho">
 		<div id="top">
 			<div class="texto">
-				<h1>Movies.com</h1>
+				<h1>Net Filmes</h1>
 				<h2>Seu site de filmes Online</h2>
 			</div>
 					<h2 align="right">Area Administrativa</h2>
@@ -26,10 +26,10 @@
                 $dia_da_semana = array("Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado");
                 
                 //função propria do php que retorna o dia, porem retorna em ingles...
-                $num_dia = date("w");
+                $num_dia = date('w');
                 
                 //então pegamos o array na posição $num_dia (variavel que contem a funçao date):
-                $dia_extenso = $dia_da_semana[$num_dia];
+                $dia_extenso = $dia_da_semana[$num_dia -1];
                 
                 //exibindo na tela: função date retornando a data, função date retornando a hora, função getenv retorna o ip:
                 echo $dia_extenso.", ".date("d/m/Y").", ".date("H:i");
@@ -48,8 +48,7 @@
 			<ul>
 				<li><a href="index.php">Home</a></li>
 				<li><a href="lst_usuario.php">Administradores do Site</a></li>
-				<li><a href="#">Central de Ajuda</a></li>
-                <li><a href="#">Relatórios</a></li>
+                <li><a href="relatorio.php">Relatórios</a></li>
 				<li><a href="sair.php">Sair</a></li>
 			</ul>
 		
