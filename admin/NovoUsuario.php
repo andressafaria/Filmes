@@ -65,15 +65,16 @@ return false;
 					<form method="post" id="form_user" action="#" onSubmit="return validaFrm(this);">
    					<tr>
     					<td>Nome:</td>
-						<td><input type="text" name="nome" id="nome" /></td>
+						<td><input type="text" name="nome" id="nome" pattern=".{3,}"/></td>
     				</tr>
 					<tr>
    						 <td>Email:</td>
-						 <td><input type="text" name="email" id="email"  onBlur="ValidaEmail();"></td>
+						 <td><input type="text" name="email" id="email"  onBlur="ValidaEmail();" placeholder="email@domain.com"
+                         pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$"></td>
    					</tr>
 					<tr>
    						 <td>Login:</td>
-						 <td><input type="text" name="entrar" id="entrar" /></td>
+						 <td><input type="text" name="entrar" id="entrar" pattern=".{3,}" /></td>
    					</tr>
 					<tr>
    						 <td>Senha:</td>
